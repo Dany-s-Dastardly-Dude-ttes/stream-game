@@ -1,0 +1,42 @@
+{
+  "attackDeck":
+  [
+    {
+      "description": "attack1",
+      "damage": "1.0f"
+    },
+    {
+      "description": "attack2",
+      "damage": "1.0f"
+    },
+    {
+      "description": "attack3",
+      "damage": "1.0f"
+    }
+  ],
+  "skillDeck":
+  [
+    {
+      "description": "skill1"
+    },
+    {
+      "description": "skill2"
+    },
+    {
+      "description": "skill3"
+    }
+    ],
+  "powerDeck":
+  [
+    {
+      "description": "power1"
+    },
+    {
+      "description": "power2"
+    },
+    {
+      "description": "power3"
+    }
+  ]
+}
+
