@@ -6,16 +6,17 @@ using UnityEngine;
 
 public class PlayerDeck : MonoBehaviour
 {
-    private Queue<ICard> playerDeck;
-    private List<ICard> playerHand;
+    public Queue<ICard> playerDeck;
+    public List<ICard> playerHand;
+
     [SerializeField] private int maxHandSize = 5;
 
     public void DrawCards()
     {
         while (playerHand.Count < maxHandSize)
-        {
-           ICard lastCard =  playerDeck.Last();
-           playerHand.Add(lastCard);
+        { 
+            ICard lastCard = playerDeck.Dequeue();
+            playerHand.Add(lastCard);
         }
     }
 }

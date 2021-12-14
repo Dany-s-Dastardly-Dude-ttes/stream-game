@@ -1,7 +1,9 @@
+using UnityEngine;
+
 namespace Cards
 {
     [System.Serializable]
-    public class AttackCard : ICard
+    public class AttackCard : MonoBehaviour, ICard
     {
         public string description;
         public float damage;
@@ -9,7 +11,7 @@ namespace Cards
         public CardType Type => CardType.Attack;
         public void ExecuteAction()
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
 
         public string GetDescription()
