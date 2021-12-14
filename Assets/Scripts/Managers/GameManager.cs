@@ -57,5 +57,14 @@ namespace Managers
                 State.skillDeck = value;
             }
         }
+
+        public ICard CurrentCard
+        {
+            get => State.selectedCard;
+            set
+            {
+                State.selectedCard = value;
+            }
+        }
     }
 }

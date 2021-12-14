@@ -9,6 +9,8 @@ namespace Managers
     public AttackDeck attackDeck;
     public SkillDeck skillDeck;
     public PowerDeck powerDeck;
+
+    public ICard selectedCard;
   }
   
 }

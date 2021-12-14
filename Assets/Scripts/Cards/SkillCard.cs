@@ -1,11 +1,15 @@
 namespace Cards
 {
    [System.Serializable]
-    public class SkillCard
+    public class SkillCard : ICard
     {
         public string description;
 
         public CardType Type => CardType.Skill;
+        public void ExecuteAction()
+        {
+            
+        }
 
         public string GetDescription()
         {

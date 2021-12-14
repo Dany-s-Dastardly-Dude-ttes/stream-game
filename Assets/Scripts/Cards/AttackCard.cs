@@ -1,12 +1,16 @@
 namespace Cards
 {
     [System.Serializable]
-    public class AttackCard
+    public class AttackCard : ICard
     {
         public string description;
         public float damage;
         
         public CardType Type => CardType.Attack;
+        public void ExecuteAction()
+        {
+            throw new System.NotImplementedException();
+        }
 
         public string GetDescription()
         {
